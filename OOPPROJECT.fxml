@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ddd0c5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oopproject.OOPPROJECTController">
+   <children>
+      <Button fx:id="ALULA1" contentDisplay="RIGHT" layoutX="100.0" layoutY="331.0" lineSpacing="100.0" mnemonicParsing="false" onAction="#ALULAACTION" prefHeight="32.0" prefWidth="89.0" style="-fx-background-color: transparent;" text="ALULA" textFill="#626c70" underline="true">
+         <font>
+            <Font name="Times New Roman" size="17.5" />
+         </font>
+         <tooltip>
+            <Tooltip text="Trip to AlUla" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="11.0" />
+               </font>
+            </Tooltip>
+         </tooltip></Button>
+      <Label layoutX="187.0" layoutY="36.0" prefWidth="239.0" text="ADVENTURE THROUGH SAUDI " textFill="#626c70">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font></Label>
+      <ImageView fitHeight="150.0" fitWidth="118.0" layoutX="14.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="BAYADA1" contentDisplay="RIGHT" layoutX="392.0" layoutY="331.0" lineSpacing="100.0" mnemonicParsing="false" onAction="#BAYADAACTION" prefHeight="32.0" prefWidth="107.0" style="-fx-background-color: transparent;" text="BAYADA" textAlignment="CENTER" textFill="#626c70" textOverrun="WORD_ELLIPSIS" underline="true">
+         <font>
+            <Font name="Times New Roman" size="17.5" />
+         </font>
+         <tooltip>
+            <Tooltip text="Trip to Bayada">
+               <font>
+                  <Font name="Times New Roman" size="11.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </Button>
+      <ImageView fitHeight="253.0" fitWidth="231.0" layoutX="29.0" layoutY="73.0" pickOnBounds="true">
+         <image>
+            <Image url="@ALULAFWINDOW.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="259.0" fitWidth="239.0" layoutX="326.0" layoutY="69.0" pickOnBounds="true">
+         <image>
+            <Image url="@BAYADA%20(2).gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oopproject.ALULAINFOWINDOWController">
+   <children>
+      <ImageView fitHeight="414.0" fitWidth="711.0" layoutX="-110.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ALULACONFIRMWINDOW.gif" />
+         </image>
+      </ImageView>
+      <VBox layoutX="63.0" layoutY="47.0" prefHeight="294.0" prefWidth="99.0" spacing="30.0">
+         <children>
+            <Label text="Name:" textFill="#090000">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label text="National ID:" textFill="#090000">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Phone Number:" textFill="#090000">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label text="E-mail:" textFill="#090000">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Gender:" textFill="#090000" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="dateLabel" text="Date:" textFill="#090000" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="dateLabel1" prefHeight="16.0" prefWidth="119.0" text="Package:" textFill="#090000" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label />
+            <Label />
+         </children>
+      </VBox>
+      <VBox layoutX="155.0" layoutY="52.0" prefHeight="277.0" prefWidth="130.0" spacing="15.0">
+         <children>
+            <TextField fx:id="nameTextField" prefHeight="25.0" prefWidth="143.0" promptText="Name">
+               <tooltip>
+                  <Tooltip text="Your First and Last Name">
+                     <font>
+                        <Font name="Times New Roman" size="11.0" />
+                     </font>
+                  </Tooltip>
+               </tooltip></TextField>
+            <TextField fx:id="idTextField" promptText="ID">
+               <tooltip>
+                  <Tooltip text="Your 10 Digit National ID">
+                     <font>
+                        <Font name="Times New Roman" size="11.0" />
+                     </font>
+                  </Tooltip>
+               </tooltip></TextField>
+            <TextField fx:id="phoneTextField" promptText="05********">
+               <tooltip>
+                  <Tooltip text="Valid Saudi Number">
+                     <font>
+                        <Font name="Times New Roman" size="11.0" />
+                     </font>
+                  </Tooltip>
+               </tooltip></TextField>
+            <TextField fx:id="emailTextField" promptText="user@company.com">
+               <tooltip>
+                  <Tooltip text="We will only use your E-Mail to contact you.">
+                     <font>
+                        <Font name="Times New Roman" size="11.0" />
+                     </font>
+                  </Tooltip>
+               </tooltip></TextField>
+            <RadioButton fx:id="male" mnemonicParsing="false" text="Male">
+               <toggleGroup>
+                  <ToggleGroup fx:id="GenderGroup" />
+               </toggleGroup>
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="female" mnemonicParsing="false" text="Female" toggleGroup="$GenderGroup">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </RadioButton>
+            <DatePicker fx:id="DatePicker" editable="false" onAction="#DatePicker" promptText="YYYY-MM-DD">
+               <tooltip>
+                  <Tooltip text="Choose The Date Of Your Reservation">
+                     <font>
+                        <Font name="Times New Roman" size="11.0" />
+                     </font>
+                  </Tooltip>
+               </tooltip></DatePicker>
+            <TextField fx:id="PackageChoice" disable="true" editable="false" />
+         </children>
+      </VBox>
+      <Label layoutX="256.0" layoutY="14.0" prefHeight="25.0" prefWidth="149.0" text="JOIN US!">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="Submit" layoutX="499.0" layoutY="342.0" mnemonicParsing="false" onAction="#SubmitAction" style="-fx-background-color: transparent;">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="56.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@next-removebg-preview%20(1).png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <tooltip>
+            <Tooltip text="Next Page">
+               <font>
+                  <Font name="Times New Roman" size="11.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </Button>
+      <Button fx:id="clear" layoutX="272.0" layoutY="342.0" mnemonicParsing="false" onAction="#ClearAction" prefHeight="24.0" style="-fx-background-color: transparent;">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@reset-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <tooltip>
+            <Tooltip text="Clear All Fields">
+               <font>
+                  <Font name="Times New Roman" size="11.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </Button>
+      <Button fx:id="exit" layoutX="42.0" layoutY="342.0" mnemonicParsing="false" onAction="#exitAction" style="-fx-background-color: transparent;">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="59.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@prev.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <tooltip>
+            <Tooltip text="Previous Page">
+               <font>
+                  <Font name="Times New Roman" size="11.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </Button>
+      <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="31.0" layoutY="41.0" pickOnBounds="true">
+         <image>
+            <Image url="@person_logo-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="31.0" layoutY="90.0" pickOnBounds="true">
+         <image>
+            <Image url="@id-card-logo-icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="31.0" layoutY="131.0" pickOnBounds="true">
+         <image>
+            <Image url="@cell-phone-logo-clipart-8-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="31.0" layoutY="174.0" pickOnBounds="true">
+         <image>
+            <Image url="@emailllfinal-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="31.0" layoutY="226.0" pickOnBounds="true">
+         <image>
+            <Image url="@gender_logo-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="31.0" layoutY="271.0" pickOnBounds="true">
+         <image>
+            <Image url="@datelogo-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="31.0" layoutY="317.0" pickOnBounds="true">
+         <image>
+            <Image url="@package.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
